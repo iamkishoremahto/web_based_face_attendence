@@ -1,0 +1,39 @@
+
+.attendence_status{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    height: 600px;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // gap: 20px;
+    color: rgb(51, 55, 51);
+    img{
+        max-width: 200px !important;
+        height: 200px !important;
+        border-radius: 50%;
+    }
+
+    #attendence_status{
+        background-color: red;
+        font-size: 2.5em;
+        padding: 10px 50px;
+        color: white;
+        border-radius: 35px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+#liveVideo{
+    video{
+    border-radius: 35px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+}

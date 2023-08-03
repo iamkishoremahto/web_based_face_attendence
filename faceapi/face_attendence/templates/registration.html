@@ -1,0 +1,72 @@
+{% extends 'page_layout.html' %}
+
+{% block body %}
+{% load static %}
+<div class="container main_wrapper">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/register.png' %}" class = "img-fluid" alt="">
+        </div>
+        <div class="col-md-6 form_wrapper" id="form_wrapper">
+           
+            <form method="post" id="registation_form" enctype="multipart/form-data">
+               
+                {% csrf_token %}
+                <div class="profile_wrapper">
+                    <div class="image_show">
+                        <img  id = "profilePicDisplay" class = "img-fluid" src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+                            alt="" class="profile_pic">
+                    </div>
+
+
+                    <div class="uploader" id="uploader">
+                        <i class="fa fa-camera upload-button"></i>
+                        <input type="file" name='employee_photo' id="employee_photo" placeholder="Profile Photo">
+                    </div>
+
+                </div>
+
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name='employee_id' id="employee_id"
+                        placeholder="Empoyee Id">
+                    <label for="employee_id">Empoyee Id</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name='employee_name' id="employee_name" placeholder="Name">
+                    <label for="employee_name">Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name='employee_email' id="employee_email"
+                        placeholder="Email">
+                    <label for="employee_email">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name='employee_mobile' id="employee_mobile"
+                        placeholder="Mobile Number">
+                    <label for="employee_mobile">Mobile Number</label>
+                </div>
+
+
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name='employee_designation' id="employee_designation"
+                        placeholder="Designation">
+                    <label for="employee_designation">Designation</label>
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" name = 'employee_address' placeholder="Address" id="employee_address"></textarea>
+                    <label for="employee_address">Address</label>
+                </div>
+                <input type="submit" class = "submit_btn btn" value="Register">
+                <!-- <button type = "submit" class= "submit_btn btn btn-primary">Register</button> -->
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

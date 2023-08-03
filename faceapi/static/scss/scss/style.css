@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.parrent_wrapper {
+  background-image: linear-gradient(109.6deg, #9cfcf8 11.2%, #6e7bfb 91.1%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll !important; }
+
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px; }
+  .main_wrapper .row div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .main_wrapper .row .form_wrapper {
+    background-color: #cdeeee !important;
+    border-radius: 30px;
+    padding: 20 0px; }
+    .main_wrapper .row .form_wrapper form {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 10px  0px;
+      gap: 5px;
+      width: 100%; }
+      .main_wrapper .row .form_wrapper form div {
+        margin: 0;
+        width: 95%; }
+        .main_wrapper .row .form_wrapper form div input {
+          width: 100%; }
+        .main_wrapper .row .form_wrapper form div textarea {
+          height: 200px;
+          margin-bottom: 30px; }
+      .main_wrapper .row .form_wrapper form .profile_wrapper {
+        position: relative;
+        width: 100%;
+        display: flex !important;
+        width: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .main_wrapper .row .form_wrapper form .profile_wrapper .image_show {
+          border-radius: 50%;
+          position: relative;
+          display: flex;
+          align-items: center !important; }
+          .main_wrapper .row .form_wrapper form .profile_wrapper .image_show img {
+            border-radius: 50%; }
+        .main_wrapper .row .form_wrapper form .profile_wrapper .uploader {
+          position: absolute;
+          right: 10;
+          cursor: pointer;
+          bottom: 10px; }
+          .main_wrapper .row .form_wrapper form .profile_wrapper .uploader input {
+            display: none; }
+
+.submit_btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: black 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-bottom: 30px; }
+  .submit_btn:hover {
+    transition: 1000ms;
+    padding: 10px 50px;
+    transform: translateY(0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #0066cc; }
+
+.registation_success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .registation_success h1 {
+    color: darkgreen !important; }
+
+.attendence_status {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 70%;
+  height: 600px;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #333733; }
+  .attendence_status img {
+    max-width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%; }
+  .attendence_status #attendence_status {
+    background-color: red;
+    font-size: 2.5em;
+    padding: 10px 50px;
+    color: white;
+    border-radius: 35px;
+    box-shadow: #26394d 0px 20px 30px -10px;
+    margin-bottom: 40px;
+    margin-top: 20px; }
+  .attendence_status a {
+    text-decoration: none; }
+
+#liveVideo video {
+  border-radius: 35px;
+  box-shadow: #26394d 0px 20px 30px -10px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+{% extends 'page_layout.html' %}
+{% block body %}
+{% load static %}
+
+<div class="container main_wrapper">
+    <div class="row">
+        <h1>Mark Attendence</h1>
+        <div class="col-md-6">
+            <div id="liveVideo">
+                <video id="videoElement" width="640" height="480" autoplay></video>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="attendence_status">
+                <img id="emp_photo" class = "img-fluid" src="https://picsum.photos/200" alt="no image">
+                <h2 id = "employee_id"></h2>
+                <h3 id="employee_name"></h3>
+
+                <p id="attendence_status">Detecting</p>
+
+                <a href="/faceapp/register/" class = "submit_btn">Home</a>
+
+
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/liveVideo.js' %}"></script>
+{% endblock %}

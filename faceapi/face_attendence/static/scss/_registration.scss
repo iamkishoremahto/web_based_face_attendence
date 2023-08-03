@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+.parrent_wrapper{
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll !important;
+}
+.main_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+
+    .row{
+        
+       
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        .form_wrapper{
+            background-color: rgb(205, 238, 238) !important;
+           border-radius: 30px;
+           padding: 20 0px;
+             
+            form{
+                display: flex;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+               padding: 10px  0px;
+               gap: 5px;
+               width: 100%;
+                
+               div{
+                margin: 0;
+                width: 95%;
+                
+                input{
+                    width: 100%;
+                }
+
+                textarea{
+                    height: 200px;
+                    margin-bottom: 30px;
+                }
+               }
+              .profile_wrapper{
+                position: relative;
+                width: 100%;
+                
+                display: flex !important;
+                width: 100px;
+                
+                margin-bottom: 20px;
+                margin-top: 20px;
+              
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                // overflow: hidden;
+
+                .image_show{
+                    border-radius: 50%;
+                    position: relative;
+                    display: flex;
+                    
+                    align-items: center !important;
+                    img{
+                    
+                        border-radius: 50%;
+                        
+                    }
+                }
+                .uploader{
+                    position: absolute;
+                    right: 10;
+                    cursor: pointer;
+                  
+                    bottom: 10px;
+                    input{
+                        display: none;
+                    }
+                }
+              }
+            }
+        }
+
+    }
+}
+
+.submit_btn{
+  
+
+
+
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+font-size: 1.5em;
+margin-bottom: 30px;
+
+&:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+
+
+
+}
+
+.registation_success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        color:darkgreen !important;
+    }
+    
+} 
